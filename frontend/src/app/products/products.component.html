@@ -1,0 +1,35 @@
+<div class="row pt-5">
+    <div class="col-md-6 mx-auto">
+        <div class="card rouded-0">
+            <div class="card-header">
+                <h3 class="mb-0">Products</h3>
+            </div>
+            <div class="card-body">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="" class="text">Name</label>
+                        <input [(ngModel)]="productData.name" name="name" type="text"
+                            class="form-control rouded-0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description</label>
+                        <input [(ngModel)]="productData.description" name="description" type="text"
+                            class="form-control rouded-0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Price</label>
+                        <input [(ngModel)]="productData.price" name="price" type="number"
+                            class="form-control rouded-0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Creation Date</label>
+                        <input [(ngModel)]="productData.date" name="date" type="date"
+                            class="form-control rouded-0" required>
+                    </div>
+
+                    <button (click)="registerProduct()" type="button" class="btn btn-success float-left">Buy Products</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
